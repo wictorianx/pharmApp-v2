@@ -1,0 +1,4 @@
+-- accounts table
+-- pharmacies table(drug_id, drug_skt, drug_amt,pharmacy_id)
+-- drugs table(drug_id, drug_price)
+-- different entries for deliveries
