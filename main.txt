@@ -1,0 +1,12 @@
+PharmApp
+(homepage)
+-her ilaç için skt vs olduğu ekran
+-tahmin algoritması ve otomatik sipariş ile ani artış
+-ilaç alındığında excelden bilgi çekilecek
+
+PharmaBox
+
+-sitede otomatların bulunduğu arayüz
+	her otomatta ilacın adı sktsi miktarı vs yazdığı kutular
+	aynı şekilde tahmin algoirtması otomatik sipariş vs bulunacak
+	ilaç alındığında bildirim düşecek
