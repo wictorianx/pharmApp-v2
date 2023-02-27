@@ -1,0 +1,65 @@
+.field{
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    align-items: center;
+    display: block;
+    color : gray;
+    border-radius: 25px;
+    background-color: #ef315d;
+    font-weight: bold;
+    opacity: 0.8;
+    border: none;
+    color: white;
+    
+    
+  }
+#createaccount{
+    box-sizing: border-box;
+    align-items: left ;
+    float:left;
+    display: block;
+}
+#submitbutton, button{
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    align-items: center;
+    display:block;
+    background-color: #ab2846;
+    border-radius: 25px;
+    color: white;
+    font-family: "Alegrea";
+    font-weight: bold;
+    opacity: 0.8;
+    border: none;
+  }
+  #input-field-container{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -30%);
+      transform: translate(-50%, -30%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  body{
+  
+    font-family: Arial;
+    background-image: url("greenpills.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+  }
+    
+
+  
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-family: "Alegreya";
+  }
