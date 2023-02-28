@@ -1,0 +1,3 @@
+sales record: (date,drug_id,user_id)
+-- construct yearly record divided into 12 months
+-- predict with a more sophisticated algorithm
