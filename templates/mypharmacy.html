@@ -1,0 +1,33 @@
+<html>
+    <meta charset="utf-8"> 
+    <head>
+        <link rel="stylesheet" href="/static/mypharmacy.css">
+    </head>
+    <body>
+        <div id="mydrugs">
+            <form action = "#" method = "post" enctype="multipart/form-data" id="form" class = "drug">  
+                <label>
+                <div id="add"onmouseover="hoverAdd(this);" onmouseout="hoverOutAdd(this)" onclick="clickAdd(this)"></div>
+                <input type="file" id="uploadfile" style="display:none" name="file"/> 
+                
+                </label> 
+            <!-- <div class="drug"id="add"onmouseover="hoverAdd(this);" onmouseout="hoverOutAdd(this)" onclick="clickAdd(this)"></div> -->
+
+        </div>
+    </body>
+</html>
+
+<script src="/static/mypharmacy.js"></script>
+<script>
+
+    let drugs = '{{drugs}}'.replaceAll("&#39;",'"');
+    console.log(drugs);
+    drugs = JSON.parse(drugs);
+    drugs.forEach(function(element){
+
+    let x = new drug(element)
+    x.place()
+    x.date()
+    })
+
+</script>
