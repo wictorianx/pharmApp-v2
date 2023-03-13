@@ -19,6 +19,7 @@ def getData(db, user_id):
     con = sqlite3.connect(db)
     cur = con.cursor()
     data = cur.execute("SELECT * FROM sales WHERE user_id = ?",(user_id,)).fetchall()
+    curmonth=0
     for i in data:
         
         date = i[0].split("-")
@@ -30,10 +31,11 @@ def getData(db, user_id):
         if year not in years:
             years[year] = {drug_id:[]}
             for i in range(12):
-                years[year][drug_id].append([])
-        while day>len(years[year][drug_id][month-1]):
-            years[year][drug_id][month -1].append(0)
-        years[year][drug_id][month-1][day-1]+=1  
+                years[year][drug_id].append(0)
+        years[year][drug_id][month-1]+=1
+        # while day>len(years[year][drug_id][month-1]):
+        #     years[year][drug_id][month -1].append(0)
+        # years[year][drug_id][month-1][day-1]+=1  
     return(years)
             
 
